@@ -1,0 +1,19 @@
+/* style.css */
+
+body {background: '/static/img/woodgrain.jpg';}
+h1{
+    color: pink;
+}
+
+#home_para{
+    color: blueviolet;
+}
+
+.home_h2{
+    color: cornflowerblue;
+}
+
+.img_1{
+    height: 200px;
+    width: 140px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User List</title>
+</head>
+<body>
+    <div>
+        <div>
+            <div>
+                <nav><a href="http://127.0.0.1:8000/form/">Form Page</a></nav>
+                <h1>Users List</h1>
+                <hr>
+                {% for items in Users_list %}
+                <h4>{{items.user_name}}</h4>
+                <ul>
+                    <li>Users name - {{items.user_name}}</li>
+                    <li>Users Age - {{items.user_age}}</li>
+                    <li>Users City - {{items.user_city}}</li>
+                    <li>Users Hobby - {{items.user_hobby}}</li>
+                    <span><a href="http://127.0.0.1:8000/Update/{{items.id}}">Update</a>&nbsp;&nbsp;<a href="http://127.0.0.1:8000/Delete/{{items.id}}">Delete</a></span>
+                </ul>
+                <hr>
+                {% endfor %}
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

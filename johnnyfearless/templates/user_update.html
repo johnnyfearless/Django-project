@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+</head>
+<body>
+    <div>
+        <div>
+            <div>
+                <h1>Update User</h1>
+                <hr>
+                <form method="post">
+                    {% csrf_token %}
+                    <input type="text" value="{{user_name}}"  name="u_name">
+                    
+
+
+                    <input type="number" value="{{user_age}}"  name="u_age">
+                    
+
+
+                    <input type="text" value="{{user_city}}"  name="u_city">
+                    
+
+
+                    <input type="text" value="{{user_hobby}}"  name="u_hobby">
+                    
+
+
+                    <input type="submit" value="Update!">
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

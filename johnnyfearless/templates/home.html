@@ -1,0 +1,37 @@
+<!-- home.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+    <title>Home</title>
+    <div>
+        <div>
+            <div>
+                <nav>
+                    <a href="http://127.0.0.1:8000/product/">Product</a>&nbsp;&nbsp;
+                    <a href="http://127.0.0.1:8000/form/">Form Page</a>  &nbsp;&nbsp;
+                    <a href="http://127.0.0.1:8000/user_list/">Users List</a>&nbsp;&nbsp;
+                    <a href="http://127.0.0.1:8000/contact/">Contact</a>&nbsp;&nbsp;
+                </nav>
+                <h1>Hello from the home page</h1>
+                <hr>
+                <p id="home_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, dolores dolore tenetur corrupti labore officia esse cum quas suscipit vero neque cupiditate voluptatibus nihil. Iure ad totam culpa voluptatum. Fuga?</p>
+                <h2 class="home_h2">By from home page</h2>
+                <hr>
+                <h2 class="home_h2">{{home_last}}</h2>
+                <hr>
+                <img class="img_1" src="{% static 'img/banff.jpeg' %}">
+                <img class="img_1" src="{% static 'img/class.jpeg' %}">
+                <img class="img_1" src="{% static 'img/download.jpeg' %}">
+            </div>
+        </div>
+    </div>
+</head>
+<body>
+    
+</body>
+</html>
